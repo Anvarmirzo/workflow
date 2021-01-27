@@ -24,9 +24,6 @@
             <div class="navbar-brand-wrapper">
                 <a class="navbar-brand" href="index.html">Logo</a>
             </div>
-            <button id="navburger" class="navbar-toggler" type="button">
-                <span class="navbar-toggler-icon"><i class="fa fa-bars"></i><i class="fa fa-close"></i></span>
-            </button>
             <div class="collapse" id="navbarToggler">
                 <ul class="navbar-nav">
                     <li class="nav-item">
@@ -44,6 +41,9 @@
                 </ul>
             </div>
             <a class="navbar-btn" href="#">Get a Quote</a>
+            <button id="navburger" class="navbar-toggler" type="button">
+                <span class="navbar-toggler-icon"><i class="fa fa-bars"></i><i class="fa fa-close"></i></span>
+            </button>
         </nav>
     </div>
     <header class="contact-header">
@@ -74,17 +74,17 @@
                                 elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
                         </div>
                     </div>
-                    <div id="counter" class="talented-number-info">
+                    <div class="talented-number-info">
                         <div class="talented-downloads">
-                            <span class="counter-number" data-num="10">10K</span>
+                            <span class="counter">10</span>
                             <p>Downloads</p>
                         </div>
                         <div class="talented-code">
-                            <span class="counter-number" data-num="247">247</span>
+                            <span class="counter">247</span>
                             <p>Lines of Code</p>
                         </div>
                         <div class="talented-coffee">
-                            <span class=" counter-number" data-num="597">597</span>
+                            <span class="counter">597</span>
                             <p>Cups of Coffee</p>
                         </div>
                     </div>
@@ -169,33 +169,33 @@
             </div>
         </div>
     </section>
-    <section class="talented talented--margin">
+    <section class="talented talented--margin" id="progress-bar">
         <div class="container">
-            <div class="row talented--flex flex-row-reverse">
+            <div class="row talented--flex talented-reversed">
                 <div class="col-lg-5 col-md-6 col-12">
                     <div class="progress-lines">
                         <div class="design-progress">
                             <h4>web design</h4>
                             <div class="full-percent">
-                                <span class="design-percent"></span>
+                                <span class="design-percent skill-per" per="73"></span>
                             </div>
                         </div>
                         <div class="corporate-progress">
                             <h4>corporate</h4>
                             <div class="full-percent">
-                                <span class="corporate-percent"></span>
+                                <span class="corporate-percent skill-per" per="58"></span>
                             </div>
                         </div>
                         <div class="investment-progress">
                             <h4>investment</h4>
                             <div class="full-percent">
-                                <span class="investment-percent"></span>
+                                <span class="investment-percent skill-per" per="80"></span>
                             </div>
                         </div>
                         <div class="marketing-progress">
                             <h4>marketing</h4>
                             <div class="full-percent">
-                                <span class="marketing-percent"></span>
+                                <span class="marketing-percent skill-per" per="96"></span>
                             </div>
                         </div>
                     </div>
@@ -223,7 +223,8 @@
                 <div class="col-md-4">
                     <div class="experts-card">
                         <div class="experts-img-wrapper">
-                            <img src="https://demo.thepunte.com/punte/business/wp-content/uploads/sites/15/2020/02/team1.jpg" alt="Tanya Revecca">
+                            <img src="https://demo.thepunte.com/punte/business/wp-content/uploads/sites/15/2020/02/team1.jpg"
+                                alt="Tanya Revecca">
                         </div>
                         <div class="experts-info">
                             <h3>Tanya Revecca</h3>
@@ -234,7 +235,8 @@
                 <div class="col-md-4">
                     <div class="experts-card">
                         <div class="experts-img-wrapper">
-                            <img src="https://demo.thepunte.com/punte/business/wp-content/uploads/sites/15/2020/02/team2.jpg" alt="Tanya Revecca">
+                            <img src="https://demo.thepunte.com/punte/business/wp-content/uploads/sites/15/2020/02/team2.jpg"
+                                alt="Tanya Revecca">
                         </div>
                         <div class="experts-info">
                             <h3>Kevin Blackwell</h3>
@@ -245,7 +247,8 @@
                 <div class="col-md-4">
                     <div class="experts-card">
                         <div class="experts-img-wrapper">
-                            <img src="https://demo.thepunte.com/punte/business/wp-content/uploads/sites/15/2020/02/team3.jpg" alt="Tanya Revecca">
+                            <img src="https://demo.thepunte.com/punte/business/wp-content/uploads/sites/15/2020/02/team3.jpg"
+                                alt="Tanya Revecca">
                         </div>
                         <div class="experts-info">
                             <h3>Sayyed Maharez</h3>
@@ -324,6 +327,9 @@
             </div>
         </div>
     </footer>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.waypoints.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 

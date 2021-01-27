@@ -47,12 +47,6 @@ html {
   }
 }
 
-@media (min-width: 1800px) {
-  .container {
-    max-width: 1710px;
-  }
-}
-
 .container-fluid,
 .container-sm,
 .container-md,
@@ -100,17 +94,6 @@ html {
   .container-lg,
   .container-xl {
     max-width: 1140px;
-  }
-}
-
-@media (min-width: 1800px) {
-
-  .container,
-  .container-sm,
-  .container-md,
-  .container-lg,
-  .container-xl {
-    max-width: 1710px;
   }
 }
 
@@ -4707,5 +4690,3 @@ html {
     margin-left: auto !important;
   }
 }
-
-/*# sourceMappingURL=bootstrap-grid.css.map */
