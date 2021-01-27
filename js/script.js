@@ -41,18 +41,41 @@ document.addEventListener("DOMContentLoaded", () => {
     /* NAVBURGER END*/
 
 
+    /* COUNTER */
+    $('.counter').counterUp({
+        delay: 10,
+        time: 1000
+    });
+    /* COUNTER END */
+
+
+    /* PROGRESS BAR ANIMATE */
+    $('#progress-bar').waypoint(function () {
+        $('.skill-per').each(function () {
+            var $this = $(this);
+            var per = $this.attr('per');
+            $this.css("width", per + '%');
+            $({ animatedValue: 0 }).animate({ animatedValue: per }, {
+                duration: 1000,
+                step: function () {
+                    $this.attr('per', Math.floor(this.animatedValue) + '%');
+                },
+                complete: function () {
+                    $this.attr('per', Math.floor(this.animatedValue) + '%');
+                }
+            });
+        });
+    }, { offset: '50%' })
+
+
+    /* PROGRESS BAR ANIMATE END*/
+
     /* GOOGLE MAP */
     /* ymaps.ready(init);
     function init() {
         // Создание карты.
         var map = new ymaps.Map("map", {
-            // Координаты центра карты.
-            // Порядок по умолчанию: «широта, долгота».
-            // Чтобы не определять координаты центра карты вручную,
-            // воспользуйтесь инструментом Определение координат.
             center: [41.28603479, 69.23473703],
-            // Уровень масштабирования. Допустимые значения:
-            // от 0 (весь мир) до 19.
             zoom: 7,
             // controls: ['zoom'],
             behaviors: ['drag']

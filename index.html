@@ -24,9 +24,6 @@
       <div class="navbar-brand-wrapper">
         <a class="navbar-brand" href="#">Logo</a>
       </div>
-      <button id="navburger" class="navbar-toggler" type="button">
-        <span class="navbar-toggler-icon"><i class="fa fa-bars"></i><i class="fa fa-close"></i></span>
-      </button>
       <div class="collapse" id="navbarToggler">
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -44,6 +41,9 @@
         </ul>
       </div>
       <a class="navbar-btn" href="#">Get a Quote</a>
+      <button id="navburger" class="navbar-toggler" type="button">
+        <span class="navbar-toggler-icon"><i class="fa fa-bars"></i><i class="fa fa-close"></i></span>
+      </button>
     </nav>
   </div>
   <header class="header">
@@ -304,7 +304,7 @@
       </div>
     </div>
   </section>
-  <section class="talented">
+  <section class="talented" id="counter">
     <div class="container">
       <div class="row talented--flex">
         <div class="col-lg-5 col-md-6 col-12 talented-img--margin">
@@ -323,17 +323,17 @@
                 elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
             </div>
           </div>
-          <div id="counter" class="talented-number-info">
+          <div class="talented-number-info">
             <div class="talented-downloads">
-              <span class="counter-number" data-num="10">10K</span>
+              <span class="counter">10</span>
               <p>Downloads</p>
             </div>
             <div class="talented-code">
-              <span class="counter-number" data-num="247">247</span>
+              <span class="counter">247</span>
               <p>Lines of Code</p>
             </div>
             <div class="talented-coffee">
-              <span class=" counter-number" data-num="597">597</span>
+              <span class="counter">597</span>
               <p>Cups of Coffee</p>
             </div>
           </div>
@@ -472,7 +472,10 @@
       </div>
     </div>
   </footer>
-  <script src="js/counter.js"></script>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery.waypoints.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 
